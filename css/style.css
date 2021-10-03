@@ -1,0 +1,224 @@
+:root {
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Ligh_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background-color: var(--White);
+    font-size: 15px;
+    background: url('../images/bg-pattern-top-mobile.svg') top no-repeat,
+                url('../images/bg-pattern-bottom-mobile.svg') bottom no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background: url('../images/bg-pattern-top-desktop.svg') top left no-repeat,
+                url('../images/bg-pattern-bottom-desktop.svg') bottom no-repeat;
+    }
+}
+
+.header-social {
+    margin: 5rem auto 0;
+    width: 94%;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .header-social {
+        display: flex;
+        text-align: left;
+        width: 80%;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .header-social__info {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-social {
+        justify-content: space-between;
+    }
+}
+
+.header-social__title {
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .header-social__title {
+        margin: 0;
+        font-size: 2.8rem;
+    }
+}
+
+.header-social__text {
+    color: var(--Dark_Grayish_Magenta);
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 25px 5px 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .header-social__text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.header-social__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+    .header-social__cards {
+        align-items: initial;
+        width: 53%;
+    }
+}
+
+
+.card-rated {
+    background-color: var(--Ligh_Grayish_Magenta);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    width: 94%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .card-rated {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-width: 400px;
+        max-width: 475px;
+    }
+
+    .card-rated:nth-child(2) {
+        transform: translate(10%);
+    }
+
+    .card-rated:nth-child(3) {
+        transform: translate(20%);
+    }
+}
+
+.card-rated__text {
+    display: flex;
+    flex-direction: column;
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.card-rated__stars > img{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    .card-rated__stars > img{
+        margin: 0 5px 0 0;
+    }
+}
+
+.main-social {
+    margin: 0 auto 5rem;
+    width: 94%;
+}
+
+@media screen and (min-width: 800px) {
+    .main-social {
+        display: flex;
+        width: 80%;
+    }
+}
+
+.card-social {
+    background-color: var(--Very_Dark_Magenta);
+    color: var(--White);
+    padding: 20px 30px;
+    margin: 0 10px 15px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .card-social {
+        max-width: 360px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-social:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .card-social:nth-child(2) {
+        transform: translate(0, 20px);
+    }
+
+    .card-social:nth-child(3) {
+        margin-right: 0;
+        transform: translate(0, 40px);
+    }
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-header__avatar {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.card-header__info {
+    margin-left: 20px;
+}
+
+.card-header__title {
+    margin: 0 0 5px 0;
+    font-size: 13px;
+    font-weight: 500x;
+}
+
+.card-header__subtitle {
+    margin: 0;
+    color: var(--Soft_Pink);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card-social__text {
+    font-size: 13px;
+    line-height: 1.6;
+}
