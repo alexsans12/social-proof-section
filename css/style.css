@@ -34,15 +34,17 @@ body {
 
 .header-social {
     margin: 5rem auto 0;
-    width: 94%;
+    max-width: 400px;
     text-align: center;
 }
+
 
 @media screen and (min-width: 800px) {
     .header-social {
         display: flex;
         text-align: left;
         width: 80%;
+        max-width: none;
         margin-top: 8rem;
         margin-bottom: 3rem;
     }
@@ -150,13 +152,14 @@ body {
 
 .main-social {
     margin: 0 auto 5rem;
-    width: 94%;
+    max-width: 400px;
 }
 
 @media screen and (min-width: 800px) {
     .main-social {
         display: flex;
         width: 80%;
+        max-width: none;
     }
 }
 
